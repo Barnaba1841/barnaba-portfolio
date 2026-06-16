@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+    font-family: Arial, sans-serif;
+    color: #222;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+#dynamic-title {
+    margin-bottom: 20px;
+    min-height: 40px;
+}
+
+.quote {
+    font-style: italic;
+    color: green;
+    margin-bottom: 40px;
+}
+
+.menu {
+    margin-bottom: 40px;
+}
+
+.menu button {
+    padding: 12px 20px;
+    margin: 5px;
+    border: none;
+    background: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.menu button:hover {
+    transform: translateY(-2px);
+}
+
+#content-box {
+    max-width: 1000px;
+    margin: auto;
+    padding: 25px;
+    border: 1px solid #e5e5e5;
+    border-radius: 15px;
+    line-height: 1.8;
+    text-align: left;
+}
+
+.commo {
+    color: #00ABF0;
+    font-weight: bold;
+}
+
+.commoo {
+    position: relative;
+    text-align: justify;
+    left: 20px;
+    padding-right: 20px;
+}
+
+.rommo {
+    text-align: center;
+}
+
+.skills-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.skills-row img {
+    width: 40px;
+    height: 40px;
+}
+
+img {
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+    vertical-align: middle;
+}
+
+.embed-card {
+    margin: 25px 0 50px 0;
+    text-align: center;
+}
+
+.embed-card h4 {
+    color: #00ABF0;
+    margin-bottom: 15px;
+}

@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Profile Picture -->
+        <img src="mainprofile.png" alt="Barnaba Peddada" class="profile-pic">
+
+        <!-- Main Heading -->
+        <h1>Hi, I am Barnaba Peddada</h1>
+
+        <!-- Dynamic Subtitle -->
+        <h4 id="dynamic-title"></h4>
+
+        <!-- Quote -->
+        <p class="quote">
+            "Be Healthy, Be Kind, Be Happy"
+        </p>
+
+        <!-- Navigation -->
+        <div class="menu">
+            <button onclick="showContent('earlylife')" style="background:#001F3F">Early Life</button>
+            <button onclick="showContent('career')" style="background:#996515">Career</button>
+            <button onclick="showContent('projects')" style="background:#CC5500">Projects</button>
+            <button onclick="showContent('tlbw')" style="background:#880E4F">Things Learned beyond Work</button>
+            <button onclick="showContent('aoc')" style="background:#C21A5B">Achievements/Certifications</button>
+            <button onclick="showContent('hobbies')" style="background: #5C0011;">Hobbies</button>
+            <button onclick="showContent('cov')" style="background:#c9c205">Community/Volunteering</button>
+            <button onclick="showContent('skills')" style="background:#0d50ed">Skills</button>
+            <button onclick="showContent('contact')" style="background:violet">Contact Me</button>
+        </div>
+
+        <!-- Dynamic Content Area -->
+        <div id="content-box">
+
+        </div>
+
+    </div>
+
+    <script>
+
+        function showContent(type) {
+
+            let title = document.getElementById("dynamic-title");
+            let content = document.getElementById("content-box");
+
+            if (type === "earlylife") {
+
+                title.innerHTML = '<span class="commo">Height:</span> 5\'7&quot; <span style="display:inline-block; width:20px;"></span> <span class="commo">Weight:</span> 62 kg';;
+
+                content.innerHTML = `<h2 class="commo" style="text-align:center;">Early Life</h2>
+
+<h3 class="commo">👶Childhood</h3>
+
+<p class="commoo">
+I was born on 25 February 2000 in Visakhapatnam, Andhra Pradesh. From an early age, I was curious about how things worked and enjoyed learning through observation and experience.
+</p>
+
+<h3 class="commo">🏫School Life</h3>
+
+<p class="commoo">
+My educational journey began at <i>Akshara Talent School</i>, Kommadi, where I studied LKG and 1st Class. Later, I joined <i>Masters Children Home</i>, a Christian missionary hostel, and studied there from 2nd Class through 10th Class at <i>Masters School</i>, which was associated with the hostel.
+</p>
+
+<p class="commoo">
+The hostel environment played a major role in shaping my personality. Apart from academics, I learned discipline, responsibility, teamwork, independence, and many practical life skills. <br>-- In 2015, I completed my SSC education with a CGPA of 9.2.
+</p>
+
+<h3 class="commo">🎓College Life</h3>
+
+<p class="commoo">
+Since childhood, Mathematics was one of my strongest subjects, and I was always fascinated by machines and understanding how things operate. Based on my interests and the guidance of my mentors, I decided to pursue Mechanical Engineering.
+</p>
+
+<p class="commoo">
+After clearing the POLYCET examination, I secured admission to <i>MRAGR Government Polytechnic</i>, Vizianagaram. Studying in a different district gave me new experiences and helped me become more independent. During my diploma years, I gained strong academic and practical knowledge in core mechanical engineering subjects.<br> I also completed a three-month apprenticeship at a Hero showroom in Visakhapatnam, where I observed real-world automobile service and maintenance operations.<br>-- In 2018, I graduated with a Diploma in Mechanical Engineering, securing 87%.
+</p>
+
+<p class="commoo">
+I later joined <i>VITAM Engineering College</i>, Anandapuram, to pursue a B.Tech in Mechanical Engineering. <br>During this period, I completed a three-month industrial training program on CNC programming and lathe machine operations conducted by Cyient in association with Andhra University. This training provided valuable exposure to manufacturing technologies and industrial processes.<br>-- In 2021, I graduated with a CGPA of 7.5, completing my formal education in Mechanical Engineering.
+</p>`;
+            }
+
+            else if (type === "career") {
+                title.innerHTML = '<span class="commo">Strenghts:</span> <span style="color:black;">Patience, adaptability, and flexibility.</span>';;
+                content.innerHTML = `<h2 class="commo" style="text-align:center">💼 Career Journey</h2>
+
+<div style="display:flex; justify-content:space-between; align-items:center;">
+    <h3 class="commo">Pepsi Bottling Plant (Holiday Worker)</h3>
+    <span class="commo">May 2013</span>
+</div>
+
+<p class="commoo">
+At the age of 13, during my summer holidays, I worked at a Pepsi beverage manufacturing facility to support my family financially. I was involved in the production and packaging line where soft drinks were filled into glass bottles and prepared for distribution.
+</p>
+
+<ul class="commoo">
+    <li>Observed beverage manufacturing and bottling processes.</li>
+    <li>Learned packaging and quality handling procedures.</li>
+    <li>Understood loading and transportation operations involving heavy vehicles.</li>
+    <li>Experienced industrial work culture and teamwork at an early age.</li>
+</ul>
+
+<hr>
+<div style="display:flex; justify-content:space-between; align-items:center;">
+    <h3 class="commo">DMart (Part-Time Cashier)</h3>
+    <span class="commo">May 2015 – Aug 2015</span>
+</div>
+
+<p class="commoo">
+After completing my SSC education, I had a few months before beginning my diploma studies. During this period, I joined DMart as a part-time cashier. This experience introduced me to the retail industry and helped me understand customer purchasing behavior and store operations.
+</p>
+
+<ul class="commoo">
+    <li>Handled billing and cashier operations.</li>
+    <li>Observed customer shopping patterns and purchasing behavior.</li>
+    <li>Learned how demand varies across weekdays, weekends, and festivals.</li>
+</ul>
+
+<hr>
+<div style="display:flex; justify-content:space-between; align-items:center;">
+    <h3 class="commo">Catering Services (Part-Time Event Support)</h3>
+    <span class="commo">2015 – 2018</span>
+</div>
+
+<p class="commoo">
+During my diploma years, I frequently worked alongside friends as a catering assistant at weddings, events, and functions to support my personal expenses.
+</p>
+
+<ul class="commoo">
+    <li>Assisted in food service and event operations.</li>
+    <li>Learned hospitality and customer service skills.</li>
+    <li>Observed large-scale event planning and coordination.</li>
+</ul>
+
+<hr>
+
+<div style="display:flex; justify-content:space-between; align-items:center;">
+    <h3 class="commo">Reliance Trends (Cashier)</h3>
+    <span class="commo">Apr 2018 – Jul 2018</span>
+</div>
+
+<p class="commoo">
+After completing my diploma, I joined Reliance Trends as a cashier before beginning my B.Tech studies. Having previously worked in grocery retail, this role gave me an opportunity to understand the fashion and apparel industry.
+</p>
+
+<ul class="commoo">
+    <li>Handled billing and customer-facing retail operations.</li>
+    <li>Learned apparel demand trends and seasonal purchasing patterns.</li>
+    <li>Observed customer preferences across different age groups and occasions.</li>
+</ul>
+
+<hr>
+
+<div style="display:flex; justify-content:space-between; align-items:center;">
+    <h3 class="commo">Maridi Eco Industries (Field Associate)</h3>
+    <span class="commo">2018 – 2021 (Part-Time)</span>
+</div>
+
+<p class="commoo">
+While pursuing my B.Tech, I worked part-time as a Field Associate at Maridi Eco Industries, a biomedical waste management company. My role involved interacting with hospitals and healthcare institutions, educating them about biomedical waste management practices, and helping them partner with the organization. I also worked alongside teams associated with the Pollution Control Board.
+</p>
+
+<ul class="commoo">
+    <li>Coordinated with hospitals and healthcare institutions.</li>
+    <li>Assisted in client onboarding and relationship management.</li>
+    <li>Handled payment collection and operational follow-ups.</li>
+</ul>
+
+<hr>
+
+<div style="display:flex; justify-content:space-between; align-items:center;">
+    <h3 class="commo">VEEMART Supermarket (Part-Time Cashier)</h3>
+    <span class="commo">Aug 2021 – Mar 2022</span>
+</div>
+
+<p class="commoo">
+After completing my B.Tech, I was actively searching for career opportunities while working part-time at VEEMART Supermarket.
+</p>
+
+<ul class="commoo">
+    <li>Handled billing operations and customer transactions.</li>
+    <li>Learned inventory management and stock control processes.</li>
+    <li>Understood profit margins and product pricing strategies.</li>
+    <li>Observed credit cycles and supplier payment management.</li>
+    <li>Assisted with employee salary calculations and store administration.</li>
+    <li>Gained exposure to billing software and day-to-day retail operations.</li>
+</ul>
+<h2 class="commo" style="text-align:center">🚀 Technical & Professional Career</h2>
+
+<div style="display:flex; justify-content:space-between; align-items:center;">
+    <h3 class="commo">iMerit Technology (Apprentice → ITES Executive)</h3>
+    <span class="commo">Mar 2022 – Mar 2023</span>
+</div>
+
+<p class="commoo">
+My first technology industry opportunity came through iMerit Technology, where I joined as an Apprentice Data Annotator. I worked on projects for a San Francisco-based autonomous vehicle company, helping prepare and label data used for Artificial Intelligence and Machine Learning systems. My responsibilities included annotating image, video, and LiDAR datasets according to strict project guidelines while maintaining high quality standards.
+</p>
+
+<p class="commoo">
+Over time, my performance and quality consistency led to a promotion as an ITES Executive. During this period, I gained valuable exposure to AI workflows, machine learning pipelines, data preparation processes, and the importance of high-quality training data in developing intelligent systems.
+</p>
+
+<ul class="commoo">
+    <li>Annotated image, video, and LiDAR datasets for autonomous vehicle systems.</li>
+    <li>Maintained project quality standards and accuracy requirements.</li>
+    <li>Learned how AI and Machine Learning models are trained using labeled data.</li>
+</ul>
+
+<p class="commoo">
+After completing my one-year contract, the project was ramped down due to budget constraints and resource restructuring, concluding my journey at iMerit.
+</p>
+
+<hr>
+
+<div style="display:flex; justify-content:space-between; align-items:center;">
+    <h3 class="commo">Eureka Forbes (Store Operations Supervisor)</h3>
+    <span class="commo">May 2023 – Jul 2023</span>
+</div>
+
+<p class="commoo">
+I joined Eureka Forbes, a leading water purification company. My responsibilities involved coordinating field technicians, assigning installation and service requests based on geographic areas, managing inventory at the warehouse, and issuing spare parts required for field operations.
+</p>
+
+<ul class="commoo">
+    <li>Managed inventory and spare-part distribution.</li>
+    <li>Coordinated technician assignments based on service locations.</li>
+</ul>
+
+<hr>
+
+<div style="display:flex; justify-content:space-between; align-items:center;">
+    <h3 class="commo">HPCL Project (Mechanical Engineer - Contract)</h3>
+    <span class="commo">Jul 2023 – Sep 2023</span>
+</div>
+
+<p class="commoo">
+An opportunity to work on an HPCL project through a contractor took me to Bengaluru, where I worked in a mechanical engineering environment. This role allowed me to connect my academic knowledge with real-world industrial execution.
+</p>
+
+<ul class="commoo">
+    <li>Worked with engineering drawings and design documentation.</li>
+    <li>Observed structural steel and beam construction activities.</li>
+    <li>Learned site execution and foreman coordination practices.</li>
+</ul>
+
+<hr>
+
+<div style="display:flex; justify-content:space-between; align-items:center;">
+    <h3 class="commo">Teleperformance (Content Moderator → Mentor → MIS Analyst)</h3>
+    <span class="commo">Sep 2023 – Aug 2025</span>
+</div>
+
+<p class="commoo">
+I joined Teleperformance Hyderabad as a Content Moderator Trainee, where I reviewed websites and digital content according to predefined quality and policy guidelines. The role required strong attention to detail, consistency, and decision-making abilities while maintaining quality standards.
+</p>
+
+<p class="commoo">
+Within a few months, I was promoted to Mentor, where I guided team members, helped improve performance, and contributed to increasing overall team quality metrics. Working closely with Quality Assurance and Operations teams gave me a broader understanding of business processes and performance management.
+</p>
+
+<p class="commoo">
+Driven by curiosity, I independently started learning web technologies such as HTML and CSS, along with concepts related to software testing and website functionality. Later, I was promoted into a Workforce Management role as an MIS Analyst, where I handled scheduling, workforce planning, reporting, and operational analytics.
+</p>
+
+<ul class="commoo">
+    <li>Reviewed and rated websites based on quality and compliance guidelines.</li>
+    <li>Promoted to Mentor and supported team quality improvement initiatives.</li>
+    <li>Promoted to MIS Analyst within Workforce Management.</li>
+    <li>Managed workforce schedules, staffing plans, and operational reporting.</li>
+    <li>Worked closely with Operations, Quality, and Workforce teams.</li>
+    <li>Learned Power BI, SQL, Excel, and Data Analytics concepts out of personal interest.</li>
+    <li>Developed knowledge of workforce planning, reporting, and business operations.</li>
+</ul>
+
+<hr>
+
+<div style="display:flex; justify-content:space-between; align-items:center;">
+    <h3 class="commo">EA Sports (Game Tester) – via Adecco</h3>
+    <span class="commo">Sep 2025 – Present</span>
+</div>
+
+<p class="commoo">
+I currently work as a Game Tester for EA Sports through Adecco, testing large-scale sports and entertainment titles across multiple gaming platforms including PC, Mac, PlayStation, and Xbox. The role involves identifying defects, validating fixes, reproducing issues, and ensuring that products meet expected quality standards before release.
+</p>
+
+<p class="commoo">
+Working in the gaming industry has provided valuable exposure to the Software Development Life Cycle (SDLC), software quality assurance processes, and modern game development workflows. Beyond my daily responsibilities, I have also explored automation testing concepts out of curiosity to better understand how testing processes can be improved and scaled.
+</p>
+`;
+            }
+            else if (type === "projects") {
+                title.innerHTML = ``;;
+                content.innerHTML = `<h2 class="commo" style="text-align:center">🛠️ Projects</h2>
+
+<h3 class="commo">🎓 Academic Projects</h3>
+
+<div style="display:flex; justify-content:space-between; align-items:center;">
+    <h4 class="commo">Pressurized Gas Filling to Air Compressor</h4>
+    <span class="commo">Diploma Project</span>
+</div>
+
+<p class="commoo">
+This project focused on the controlled transfer and storage of pressurized gas using air compressor systems. The objective was to study the working principles of compressed air systems and understand how pressure can be generated, stored, regulated, and utilized efficiently in industrial applications.
+</p>
+
+<ul class="commoo">
+    <li>Studied air compressor operation and compressed air generation.</li>
+    <li>Worked with pressure gauges, regulators, valves, storage tanks, and piping systems.</li>
+    <li>Learned industrial applications of pneumatic systems and compressed air technology.</li>
+</ul>
+
+<hr>
+
+<div style="display:flex; justify-content:space-between; align-items:center;">
+    <h4 class="commo">Cooling Helmet Using Thermoelectric Modules</h4>
+    <span class="commo">B.Tech Final Year Project</span>
+</div>
+
+<p class="commoo">
+The objective of this project was to improve rider comfort by creating a cooling effect inside a helmet using thermoelectric cooling technology. The system utilized Peltier (thermoelectric) modules to transfer heat from the interior of the helmet to the outside environment, helping reduce temperature and improve comfort during hot weather conditions.
+</p>
+
+<ul class="commoo">
+    <li>Designed a prototype cooling system using Peltier modules.</li>
+    <li>Integrated heat sinks and cooling fans for heat dissipation.</li>
+    <li>Studied thermoelectric cooling principles and heat transfer concepts.</li>
+</ul>
+
+<hr>
+
+<h3 class="commo">💻 Web Development Project</h3>
+
+<div style="display:flex; justify-content:space-between; align-items:center;">
+    <h4 class="commo">Personal Portfolio Website</h4>
+    <span class="commo">HTML • CSS • JavaScript</span>
+</div>
+
+<p class="commoo">
+This portfolio website was developed as a hands-on learning project while exploring web development. Built using HTML and CSS, the website serves as a digital representation of my journey, experiences, skills, projects, and interests. The project helped me understand how modern websites are structured, styled, and made interactive.
+</p>
+
+<ul class="commoo">
+    <li>Designed and developed the website from scratch.</li>
+    <li>Created reusable sections for projects, skills, career journey, and achievements.</li>
+    <li>Applied responsive design and user-friendly layout principles.</li>
+</ul>
+
+<p class="commoo">
+🔗 <a href="YOUR_GITHUB_PORTFOLIO_LINK" target="_blank">View Project on GitHub</a>
+</p>
+
+<hr>
+
+<h3 class="commo">📊 Data Analytics Projects</h3>
+
+<p class="commoo">
+While learning Data Analytics, I completed several hands-on projects using Excel, SQL, and Power BI. These projects helped me understand data cleaning, transformation, analysis, visualization, and business storytelling techniques.
+</p>
+
+<div style="display:flex; justify-content:space-between; align-items:center;">
+    <h4 class="commo">Excel Projects</h4>
+    <span class="commo">Microsoft Excel</span>
+</div>
+
+<p class="commoo">
+Worked on data cleaning, dashboard creation, KPI tracking, reporting, and business analysis projects using Microsoft Excel.
+</p>
+
+<p class="commoo">
+🔗 <a href="YOUR_EXCEL_PROJECTS_GITHUB_LINK" target="_blank">View Excel Projects</a>
+</p>
+
+
+<div style="display:flex; justify-content:space-between; align-items:center;">
+    <h4 class="commo">SQL Projects</h4>
+    <span class="commo">SQL</span>
+</div>
+
+<p class="commoo">
+Developed SQL-based projects involving querying, joins, aggregations, data analysis, and business problem-solving using relational databases.
+</p>
+
+<p class="commoo">
+🔗 <a href="YOUR_SQL_PROJECTS_GITHUB_LINK" target="_blank">View SQL Projects</a>
+</p>
+
+<div style="display:flex; justify-content:space-between; align-items:center;">
+    <h4 class="commo">Power BI Projects</h4>
+    <span class="commo">Power BI</span>
+</div>
+
+<p class="commoo">
+Created interactive dashboards and business intelligence reports focused on transforming raw data into meaningful insights and actionable recommendations.
+</p>
+
+<p class="commoo">
+🔗 <a href="YOUR_POWERBI_PROJECTS_GITHUB_LINK" target="_blank">View Power BI Projects</a>
+</p>`;
+            }
+            else if (type === "tlbw") {
+                title.innerHTML = `< span class="commo" > Mother Tongue: </span > <span>Telugu</span>`;;
+                content.innerHTML = `<h2 class="commo" > Things Learned Beyond Work</h2>
+
+<h3 class="commo">📈 Stock Market, Investing & Economics</h3>
+
+<ul>
+    <li class="commoo">
+        Developed a strong interest in understanding how businesses, financial markets, and economies operate.
+    </li>
+
+<li class="commoo">
+    Learned the fundamentals of investing, trading, valuation, risk management, and long-term wealth creation.
+</li>
+
+<li class="commoo">
+    Explored how companies generate revenue, create competitive advantages, and contribute to economic growth.
+</li>
+
+<li class="commoo">
+    Created a 12-post LinkedIn series explaining stock market concepts in a simple and beginner-friendly manner.
+</li>
+</ul>
+
+<p style="text-align:center;">
+<a href="https://www.linkedin.com/feed/update/urn:li:activity:7258106215765872640/" target="_blank">
+View LinkedIn Stock Market Series
+</a>
+</p>
+
+<h3 class="commo">💻 Technology & Coding</h3>
+
+<ul>
+    <li class="commoo">
+        Became curious about how computers, websites, mobile applications, and software systems work behind the scenes.
+    </li>
+    <li class="commoo">
+        Learned programming primarily through self - learning resources and YouTube.
+    </li >
+<li class="commoo">
+    Built foundational knowledge in C, HTML, CSS, Python, and SQL.
+</li>
+
+</ul>
+
+<h3 class="commo">✍️ Storytelling & Writing</h3>
+
+<ul>
+    <li class="commoo">
+        Passionate about storytelling since childhood, inspired initially by timeless epics such as Mahabharata and Ramayanam.
+    </li>
+    <li class="commoo">
+        Later became fascinated by large - scale fantasy and character - driven narratives including Game of Thrones, The Lord of the Rings, Avengers.
+    </li >
+    <li class="commoo">
+        Anime is my all-time favourite form of entertainment.</li>
+    <li class="commoo">
+    Participated in the Notion Press Writing Contest to explore creative writing and storytelling.
+</li>
+<p style="text-align:center;">
+<a href="https://notionpress.com/write_contest/details/6550/that-one-yes" target="_blank">
+View Notion Press Entry
+</a>
+</p>
+<li class="commoo">
+    Published original writing on Pratilipi and continue developing long-form fiction projects.
+</li>
+
+</ul>
+<p style="text-align:center;">
+<a href="https://telugu.pratilipi.com/story/%E0%B0%A5%E0%B0%9F%E0%B1%8D-%E0%B0%B5%E0%B0%A8%E0%B1%8D-%E0%B0%AF%E0%B0%B8%E0%B1%8D-wcdjt4efhqdb?language=TELUGU" target="_blank">
+Read on Pratilipi
+</a>
+</p>
+
+<h3 class="commo">🎙️ Voice Acting & Dubbing</h3>
+
+<ul>
+    <li class="commoo">
+        Developed an interest in voice acting and dubbing, particularly for anime.
+    </li>
+        <li class="commoo">
+        Experimented with Telugu dubbing for anime scenes.
+</li>
+</ul>
+<p style="text-align:center;">
+<a href="https://www.instagram.com/p/DFuxFwdNSJa/" target="_blank">
+View Dubbing Project for Instagram
+</a>
+</p>
+<h3 class="commo">🌍 Languages</h3>
+
+<ul>
+    <li class="commoo">
+        <strong>Telugu</strong> – Native language.
+    </li >
+
+    <li class="commoo">
+        <strong>English</strong> – Learned through formal education and used for academics and professional communication.
+    </li>
+
+    <li class="commoo">
+        <strong>Hindi</strong> – Learned during school education and comfortable with everyday conversations.
+    </li>
+
+    <li class="commoo">
+        <strong>Tamil</strong> – Picked up through interactions with friends during my time at iMerit and can understand basic conversations.
+    </li>
+
+    <li class=commoo>
+        <strong>Kannada</strong> – Learned basic phrases and conversational Kannada while staying in Bengaluru for a few months.
+    </li>
+
+    <li class="commoo">
+        <strong>Marathi</strong> – Familiar with a few common words and expressions through interactions with Marathi-speaking friends in EA Sports.
+    </li>
+</ul>
+                `;
+            }
+
+
+            else if (type === "aoc") {
+
+                title.innerText = "";
+
+                content.innerHTML = `
+                    <h2 class="commo" >🏆 Achievements & Certifications</h2 >
+
+<h3 class="commo">Academic Achievements</h3>
+
+<ul>
+    <li class="commoo">Secured <strong>9.2 CGPA</strong> in SSC (10th Grade).</li>
+
+    <li class="commoo">Achieved <strong>87%</strong> in Diploma in Mechanical Engineering.</li>
+
+    <li class="commoo">Graduated with <strong>7.5 CGPA</strong> in B.Tech Mechanical Engineering.</li>
+</ul>
+
+<h3 class="commo">Sports & Competitions</h3>
+
+<ul>
+    <li class="commoo">Represented my institution in <strong>Inter-Polytechnic Sports</strong> at the District Level in Chess.</li>
+
+    <li class="commoo">Participated in <strong>Chess</strong> and <strong>Carroms</strong> tournaments, and secured <strong>Runner-Up</strong> position in the Teleperformance Office Tournament.</li>
+</ul>
+
+<h3 class="commo">Certifications & Assessments</h3>
+
+<ul>
+    <li class="commoo">
+        Scored <strong>81.33%</strong> in the <strong>TCS National Qualifier Test (TCS NQT) 2023</strong>, demonstrating aptitude, reasoning, and problem-solving skills.
+    </li>
+</ul>
+
+    <img src="tcs-nqt-cert.jpg" style= "height:400px;width:700px;display: block; margin-left: auto; margin-right: auto;">`;
+            }
+
+            else if (type === "cov") {
+
+                title.innerText = "";
+
+                content.innerHTML = `
+            <h3 class="commo">Hyderabad Data Analytics Community (HDAC)</h3>
+            <ul>
+                <li class="commoo">Member of Hyderabad Data Analytics Community (HDAC).</li>
+                <li class="commoo">Attended the Microsoft Fabric Bootcamp conducted by HDAC at the Microsoft Office, Hyderabad, gaining hands-on exposure to the Microsoft Fabric ecosystem.</li>
+            </ul>
+            <div class="embed-card">
+                <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7225844654301143040?collapsed=1" height="342" width="504" frameborder="0" allowfullscreen>
+                </iframe>
+            </div>
+            <h3 class="commo">Codebasics Resume Challenges</h3>
+            <ul>
+                <li class="commoo">Participated in Codebasics Resume Challenge #10, analyzing IPL data to uncover team, player, and match insights through data analytics and visualization.</li>
+            </ul>
+            <div class="embed-card">
+                <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7189953481481293824?collapsed=1" height="342" width="504" frameborder="0" allowfullscreen>
+                </iframe>
+            </div>
+            <ul>
+                <li class="commoo">Participated in Codebasics Resume Challenge #12, conducting Electric Vehicle (EV) market analysis and presenting business insights through interactive dashboards.</li>
+            </ul>
+            <div class="embed-card">
+                <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7233829054783569921?collapsed=1" height="342" width="504" frameborder="0" allowfullscreen>
+                </iframe>
+            </div>
+            <h3 class="commo">Youth For Seva (YFS)</h3>
+            <ul>
+                <li class="commoo">Active member of Youth For Seva, Hyderabad.</li>
+                <li class="commoo">Volunteered in community initiatives including Diya Painting, Seed Ball Making, School Kit Distribution, and support activities for visually impaired individuals.</li>
+                <li class="commoo">Taught NMMS classes for government school students.</li>
+                <li class="commoo">Volunteered at Chiguru, one of the flagship events organized by Youth For Seva, where I conducted sports activities and managed students from an entire participating school.</li>
+            </ul>
+            <p style="text-align:center">
+                <a href="https://www.instagram.com/p/DF5EB0FJfHF/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" style="color:black;">Chiguru Instagram Post
+                </a>
+            </p>
+    `;
+            }
+
+            else if (type === "skills") {
+                title.innerHTML = '<span class="commo">Currently Learning:</span> <span style="color:black;">Selenium</span>';;
+                content.innerHTML = `
+    <p class="commo">Life Skills</p>
+    <div class="skills-row">
+        <img src="cooking-book-svgrepo-com.svg" title="Cooking">
+        <img src="reading-svgrepo-com.svg" title="Reading">
+        <img src="writing-hand-medium-dark-skin-tone-svgrepo-com.svg" title="Writing">
+        <img src="farmer-svgrepo-com.svg" title="Farming">
+        <img src="time-management-scheduling-planning-svgrepo-com.svg" title="Time Management">
+        <img src="exercise-health-fitness-weight-svgrepo-com.svg" title="Exercise">
+    </div>
+    <p class="commo">Programming & Coding</p>
+    <div class="skills-row">
+        <img src="c-svgrepo-com.svg" title="C">
+        <img src="html-svgrepo-com.svg" title="HTML">
+        <img src="css3-01-svgrepo-com.svg" title="CSS">
+        <img src="python-svgrepo-com.svg" title="Python">
+        <img src="dsa.png" title="DSA">
+        <img src="vs-code-svgrepo-com.svg" title="VS code">
+    </div>
+
+    <p class="commo">Data Analysis</p>
+    <div class="skills-row">
+        <img src="sql-database-sql-azure-svgrepo-com.svg" title="SQL">
+        <img src="excel2-svgrepo-com.svg" title="Excel">
+        <img src="google-sheets-svgrepo-com.svg" title="Google Sheets">
+        <img src="numpy-svgrepo-com.svg" title="NumPy">
+        <img src="pandas-svgrepo-com.svg" title="Pandas">
+        <img src="chart-mixed-svgrepo-com.svg" title="Dashboarding">
+        <img src="powerbi-svgrepo-com.svg" title="PowerBI">
+    </div>
+    <p class="commo">Finance</p>
+    <div class="skills-row">
+        <img src="finance-business-money-payment-inflation-svgrepo-com.svg" title="Finance">
+        <img src="stock-market-svgrepo-com.svg" title="Stock Market">
+        <img src="money-user-arrows-svgrepo-com.svg" title="Budgeting">
+        <img src="saving-money-is-important-piggy-bank-svgrepo-com.svg" title="Investing">
+    </div>
+    <p class="commo">Productivity & Presentation</p>
+    <div class="skills-row">
+        <img src="canva-svgrepo-com.svg" title="Canva">
+        <img src="notion-svgrepo-com.svg" title="Notion">
+        <img src="docs-svgrepo-com.svg" title="Google Docs">
+        <img src="powerpoint2-svgrepo-com.svg" title="PowerPoint">
+    </div>
+    <p class="commo">Technology</p>
+    <div class="skills-row">
+        <img src="github-142-svgrepo-com.svg" title="GitHub">
+        <img src="ai-svgrepo-com.svg" title="AI">
+        <img src="openai-svgrepo-com.svg" title="OpenAI">
+    </div>
+    <p class="commo">Design & Engineering</p>
+    <div class="skills-row">
+        <img src="autocad-lt-svgrepo-com.svg" title="AutoCAD">
+    </div>
+    <p class="commo">Cinema & Storytelling</p>
+    <div class="skills-row">
+        <img src="mic-svgrepo-com.svg" title="Dubbing">
+        <img src="drawing-board-svgrepo-com.svg" title="Drawing">
+        <img src="clapperboard-edit-svgrepo-com.svg" title="Editing">
+        <img src="writing-hand-medium-dark-skin-tone-svgrepo-com.svg" title="Story Writing">
+    </div>
+    `;
+            }
+            else if (type === "contact") {
+                title.innerHTML = '<span class="commo">Connect with Me:</span> <span><a href="https://github.com/Barnaba1841" target = "_blank" style = "color:black;" > Barnaba</a ></span > ';;
+                content.innerHTML = `
+    <section class="rommo">
+        <p><span class="commo">Email</span> :
+            <a href="mailto:barnabapeddada143@gmail.com" style="color:black;">barnabapeddada143@gmail.com</a>
+        </p>
+        <p><span class="commo">Call / WhatsApp</span> :
+            <a href="tel:+918125825943" style="color:black;">+91 8125825943</a>
+        </p>
+        <p><span class="commo">Instagram</span> :
+            <a href="https://www.instagram.com/barnaba_peddada/" target="_blank"
+                style="color:black;">@barnaba_peddada</a>
+        </p>
+        <p><span class="commo">LinkedIn</span> :
+            <a href="https://www.linkedin.com/in/barnaba-peddada" target="_blank" style="color:black;">Barnaba
+                Peddada</a>
+        </p>
+    </section>`;
+            }
+            else if (type === "hobbies") {
+                title.innerHTML = '<span class="commo">All Time Favourite Movie:</span> <span style="color:black;">Charlie</span>';;
+                content.innerHTML = `
+    <h2><span class="commo"><b>👨‍🍳 Cooking</b></span></h2>
+    <p class="commoo">Enjoys cooking and occasionally experimenting with new recipes and flavors.</p>
+    <h2><span class="commo"><b>✏️ Drawing</b></span></h2>
+    <p class="commoo">Mostly enjoy sketching from references, including anime-inspired art, cartoons, and pencil
+        drawings.</p>
+    <h2><span class="commo"><b>📖 Writing</b></span></h2>
+    <p class="commoo">Passionate about storytelling and long-form fiction. Completed one short novel project and
+        currently developing four additional works, primarily in the novel and fantasy genres.</p>
+    <p class="commoo">You can expect to see much more from my pen in the future.</p>
+    <h2><span class="commo"><b>📚 Reading Books</b></span></h2>
+    <p class="commoo">Completed 5 self-help books—<i>Vijayaniki Aidhu Metlu, Think Like a Monk, Atomic Habits,
+            Ikigai,</i> and <i>Do Epic Shit</i>—along with fiction titles such as <i>The Alchemist</i> and <i>2
+            States</i>.</p>
+    <h2><span class="commo"><b>🎬 Watching Stories</b></span></h2>
+    <p class="commoo">Enjoy engaging narratives across anime, films, and web series. Favorite anime include <i>One
+            Piece</i> and <i>Vinland Saga</i>.</p>
+    <h2><span class="commo"><b>🏏 Sports & Games</b></span></h2>
+    <p class="commoo">Regularly play Cricket, Badminton, Table Tennis, Foosball, and Snooker. Also enjoy casual strategy
+        and social games such as UNO, Chess, Carroms and playing cards.</p>`;
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
